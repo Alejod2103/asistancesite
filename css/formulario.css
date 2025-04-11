@@ -1,0 +1,157 @@
+.contact_form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nombre_apellido {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services_city {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services_city {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.services_city p {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.services_city label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.services_city select {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.nombre_apellido p {
+    flex-basis: 48%;
+}
+
+.formulario h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #225019;
+}
+
+.formulario h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario p {
+    margin-bottom: 15px;
+}
+
+.formulario label {
+    display: block;
+    font-weight: bold;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="tel"],
+.formulario textarea,
+.formulario select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.formulario textarea {
+    height: 150px;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 10px;
+    background-color: #13461a;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.formulario button:hover {
+    background-color: #2d2450;
+}
+
+.aviso {
+    text-align: center;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .contact_form {
+        margin: 20px;
+    }
+}
+
+/* Estiliza el contenedor del botón flotante */
+
+.floating-button-container {
+    position: fixed;
+    /* Posición fija */
+    bottom: 20px;
+    /* 20 píxeles desde el fondo */
+    left: 20px;
+    /* 20 píxeles desde la izquierda */
+    z-index: 1000;
+    /* Asegura que esté por encima de otros elementos */
+}
+
+/* Estiliza el botón */
+
+.floating-button {
+    background-color: #e94642;
+    /* Color de fondo verde */
+    color: white;
+    /* Color del texto blanco */
+    border: none;
+    /* Sin borde */
+    padding: 15px 30px;
+    /* Espaciado interno */
+    text-align: center;
+    /* Alineación del texto */
+    text-decoration: none;
+    /* Sin subrayado */
+    display: inline-block;
+    /* Bloque en línea */
+    font-size: 16px;
+    /* Tamaño de fuente */
+    margin: 4px 2px;
+    /* Márgenes */
+    cursor: pointer;
+    /* Cursor de mano al pasar */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* Sombra */
+    transition: 0.3s;
+    /* Transición suave */
+}
+
+/* Estilo del botón al pasar el cursor */
+
+.floating-button:hover {
+    background-color: #1e1d50;
+    /* Color de fondo más oscuro al pasar */
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Telcom Digital</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <img src="/images/logo/digitallogo.png" alt="Telcom Digital Network" class="logo">
+            <span class="secure-label">PAGO SEGURO</span>
+        </div>
+    </header>
+    <main class="checkout-container">
+        <div class="product-box">
+            <h1>Kit Digital Estándar</h1>
+            <p class="price">$84.99 <span class="quantity">Cantidad: 1</span></p>
+            <ul class="features">
+                <li>Guías paso a paso descargables</li>
+                <li>Panel de cliente con recursos</li>
+                <li>Entrega 100% digital automática</li>
+                <li>Soporte 24/7 por los proximos 3 meses de servicio incluido</li>
+            </ul>
+        </div>
+
+        <form class="form-box" action="send.php" method="POST" >
+    <h2>Información del Cliente</h2>
+
+    <label for="name">Nombre completo</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Correo electrónico</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Número de teléfono</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="address">Dirección</label>
+    <input type="text" id="address" name="address" placeholder="Ciudad, estado o ubicación relevante" required>
+
+    <label for="service-type">Tipo de servicio</label>
+    <select id="service-type" name="service-type" required>
+        <option value="">Selecciona una opción</option>
+        <option value="internet">Internet</option>
+        <option value="cable">Cable</option>
+        <option value="ambos">Ambos</option>
+    </select>
+
+    <label for="plan">Plan</label>
+    <select id="plan" name="plan" required>
+        <option value="estandar">Kit Digital Estándar</option>
+        <option value="premium">Kit Digital Premium</option>
+    </select>
+
+    <button type="submit" class="btn">PROCEDER AL PAGO</button>
+    <a href="/demo-guide.pdf" class="demo-link" download>Descargar versión demo</a>
+</form>
+    </main>
+</body>
+</html>

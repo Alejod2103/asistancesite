@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #f7f9fc;
+    color: #1d1d1f;
+}
+
+.header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 20px 0;
+}
+
+.container.header-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 150px;
+}
+
+.secure-label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #8b949e;
+}
+
+.checkout-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.product-box, .form-box {
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.form-box {
+    padding-left: 40px;
+    padding-right: 60px;
+}
+
+.product-box h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.price {
+    color: #2e7d32;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.quantity {
+    float: right;
+    font-weight: normal;
+    color: #444;
+}
+
+.features {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.features li {
+    margin-bottom: 6px;
+}
+
+.form-box h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-top: 6px;
+    border: 1px solid #ccd1d9;
+    border-radius: 6px;
+    font-size: 15px;
+    background: #fdfdfd;
+}
+
+.btn {
+    margin-top: 25px;
+    width: 100%;
+    padding: 14px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #256927;
+}
+
+.demo-link {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    color: #2e7d32;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    .container.header-container,
+    .checkout-container {
+        width: 95%;
+        padding: 0 10px;
+    }
+
+    .logo {
+        height: 120px;
+    }
+
+    .form-box, .product-box {
+        padding: 25px 20px;
+    }
+}
